@@ -76,6 +76,24 @@
             <div id="reported">
                 <h1>Reported posts</h1>
             </div>
+            <section class="main mx-auto container pt-5 pb-5">
+                <h3>Question no 1: How does Javascript work?</h3>
+                <p>Answer: Generally we know that, JavaScript is a scripting language for the web. It is an interpreted language, which means it does not need a compiler to translate its code like C or C++. JavaScript code runs directly in a web browser.Some Javascript engine use just in time compiler for javascript, so that javascript load quickly.  <br>
+
+                 <u>How Javascript works:</u>   The web browser loads a web page, parses the HTML, and creates what is known as a Document Object Model (DOM) from the contents. The DOM presents a live view of the web page to your JavaScript code.
+
+                 The browser will then grab everything linked to the HTML, like images and CSS files. The CSS information comes from the CSS parser.
+                 
+                 The HTML and CSS are put together by the DOM to create the web page first. Then, the browsers' JavaScript engine loads JavaScript files and inline code but does not run the code immediately. It waits for the HTML and CSS to finish loading.
+                 
+                 Once this is done, the JavaScript is executed in the order the code is written. This results in the DOM being updated by JavaScript code and rendered by the browser.
+                 
+                 The order here is important. If the JavaScript did not wait for the HTML and CSS to finish, it would not be able to change the DOM elements.
+                </p>
+
+               <h3>Question no 2: What does Javascript event loop do ?</h3> 
+               <p>Answer:  We know that, JavaScript is a single-threaded synchronous programming language. The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion of multi-threading. The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack. Event loop is just a guardian who keeps a good communication with Call Stack and Callback Queue. It checks if the call stack is free, then lets know the callback queue. Then Callback queue passes the callback function to Call stack to be executed. When all the callback functions are executed, the call stack is out and global execution context is free.</p>
+            </section>
         </main>
         <footer></footer>
 
